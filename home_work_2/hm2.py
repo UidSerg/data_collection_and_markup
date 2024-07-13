@@ -11,9 +11,10 @@ from bs4 import BeautifulSoup
 import urllib.parse
 import pandas as pd
 import re
+import time
 
 url = 'http://books.toscrape.com/'
-url1 = 'http://books.toscrape.com/catalogue/'
+
 stop = 0
 books_info = []
 
@@ -22,8 +23,12 @@ while True:
     stop +=1 # на всякий пока чтоб не зациклить
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    next_page_link = soup.find('li', {'class': 'next'}).find('a').get('href') # след страница
+    try:
+        next_page_link = soup.find('li', {'class': 'next'}).find('a').get('href') # след страница
+    except:
+        next_page_link = ""
     print(next_page_link)
+
     release_links = []
     # получим список линков на книги
     for link in soup.find_all('li', {'class': 'col-xs-6 col-sm-4 col-md-3 col-lg-3'}):
@@ -63,18 +68,22 @@ while True:
             rating = 0
         
         # получаем описание
-        description = soup.find('div', {'id': 'product_description'}).find_next_sibling('p').text
+        try:
+            description = soup.find('div', {'id': 'product_description'}).find_next_sibling('p').text
+        except:
+            description = "не удалось получить описание"
+
         output = {'Name' : name, 'Price' : price, 'Остаток' : count, 'Рейтинг' : rating, 'Описание' : description}
-    books_info.append(output)
-    
-    if not next_page_link:
+        books_info.append(output) # запись прохода в общий лист
+    time.sleep(1) # задержка
+    if len(next_page_link) < 3:
         break
-    if stop == 5:
-        break
+
     if stop == 1:
         url = urllib.parse.urljoin('http://books.toscrape.com/', next_page_link)
     else:
         url = urllib.parse.urljoin('http://books.toscrape.com/catalogue/', next_page_link) 
+
 df = pd.DataFrame(books_info)
 print(df.head())
 df.to_json('hm2.json', orient='records', lines=True)   
