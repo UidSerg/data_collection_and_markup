@@ -38,7 +38,7 @@ print(f"число записей в бзд =  {count}")
 
 
 query = {'properties.fatalities':'Yes'}
-print(f"олличество документов с фатальным исходом: {collection.count_documents(query)}")
+print(f"колличество документов с фатальным исходом: {collection.count_documents(query)}")
 
 
 query = {'properties.fatalities':'Yes'}

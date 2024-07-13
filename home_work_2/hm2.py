@@ -12,6 +12,8 @@ import urllib.parse
 import pandas as pd
 import re
 import time
+import json
+import os
 
 url = 'http://books.toscrape.com/'
 
@@ -74,8 +76,20 @@ while True:
             description = "не удалось получить описание"
 
         output = {'Name' : name, 'Price' : price, 'Остаток' : count, 'Рейтинг' : rating, 'Описание' : description}
+       
+       ## проверим есть ли файл если есть дописываем
+        if os.path.exists('books_data.json'):
+            df = pd.read_json('books_data.json')
+        else:
+            df = pd.DataFrame()
+
+        data = df.to_dict(orient='records')
+        data.append(output)
+        with open('books_data.json', 'w', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+        
         books_info.append(output) # запись прохода в общий лист
-    time.sleep(1) # задержка
+    time.sleep(10) # задержка
     if len(next_page_link) < 3:
         break
 
@@ -86,4 +100,4 @@ while True:
 
 df = pd.DataFrame(books_info)
 print(df.head())
-df.to_json('hm2.json', orient='records', lines=True)   
+#df.to_json('hm2.json', orient='records', lines=True)   

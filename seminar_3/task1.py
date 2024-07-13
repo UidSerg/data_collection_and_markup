@@ -19,7 +19,7 @@ db = client['town_cary'] # выбор бзд
 
 collection = db['crashes']
 
-with open('crash-data.json', 'r') as file:
+with open('seminar_3/crash-data.json', 'r') as file:
     data = json.load(file)
 
 # извлечение данных из ключа features
