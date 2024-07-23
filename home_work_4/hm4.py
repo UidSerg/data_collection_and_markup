@@ -56,10 +56,10 @@ for row in table:
         'Name' : row.xpath(".//td[2]/text()")[0].strip() if(row.xpath(".//td[2]/text()")[0].strip()) else "Не определено",
         'Last Priise' : row.xpath(".//td[3]/fin-streamer/text()")[0] if(row.xpath(".//td[3]/fin-streamer/text()")[0]) else "Не определено", 
         'Market Time' : row.xpath(".//td[4]/fin-streamer/text()")[0] if(row.xpath(".//td[4]/fin-streamer/text()")[0]) else "Не определено",
-        'Change' : row.xpath(".//td[5]//span/text()")[0],
-        'Change %' : row.xpath(".//td[6]//span/text()")[0],
-        'Volume' : str(row.xpath(".//td[7]/fin-streamer/text()"))[2:][:-2],
-        'Market Cap' : str(row.xpath(".//td[8]/fin-streamer/text()"))[2:][:-2],
+        'Change' : row.xpath(".//td[5]//span/text()")[0] if(row.xpath(".//td[5]//span/text()")[0]) else "Не определено",
+        'Change %' : row.xpath(".//td[6]//span/text()")[0] if(row.xpath(".//td[6]//span/text()")[0]) else "Не определено",
+        'Volume' : str(row.xpath(".//td[7]/fin-streamer/text()"))[2:][:-2] if(row.xpath(".//td[7]/fin-streamer/text()")) else "Не определено",
+        'Market Cap' : str(row.xpath(".//td[8]/fin-streamer/text()"))[2:][:-2] if(row.xpath(".//td[8]/fin-streamer/text()")) else "Не определено",
 
     })  
 ## проверим есть ли файл если есть дописываем
