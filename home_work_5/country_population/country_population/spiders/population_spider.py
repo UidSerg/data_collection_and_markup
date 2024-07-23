@@ -13,8 +13,8 @@ class PopulationSpiderSpider(scrapy.Spider):
             ## таблица кривая первые два раза нет страны пропустим через continue
             if country == None:
                 continue
-            population_22 = row.xpath('.//td[2]/text()').get()
-            population_23 = row.xpath('.//td[3]/text()').get()
+            population_22 = int(row.xpath('.//td[2]/text()').get().replace(',','')) # убираем запятые --> int
+            population_23 = int(row.xpath('.//td[3]/text()').get().replace(',',''))
             change = float(row.xpath('.//td[4]/span/text()').get()[:-1].replace('−','-')) #срез %  замена  черточки на минус --> float
             region = row.xpath('.//td[5]/a/text()').get()
             sub_region = row.xpath('.//td[6]/a/text()').get()

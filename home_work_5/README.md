@@ -10,6 +10,13 @@
 
 команды:
     scrapy startproject country_population
+
     scrapy genspider population_spider "en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
+
     scrapy crawl population_spider
+
     scrapy crawl population_spider -o population.json
+
+## файл с данными
+
+/country_population/population.json
