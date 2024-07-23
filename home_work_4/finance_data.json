@@ -1,0 +1,304 @@
+[
+    [
+        {
+            "Symbol": "SPOT",
+            "Name": "Spotify Technology S.A.",
+            "Last Priise": "333.03",
+            "Market Time": "11:09AM EDT",
+            "Change": "+37.58",
+            "Change %": "+12.72%",
+            "Volume": "3.787M",
+            "Market Cap": "66.291B"
+        },
+        {
+            "Symbol": "UPS",
+            "Name": "United Parcel Service, Inc.",
+            "Last Priise": "126.14",
+            "Market Time": "11:09AM EDT",
+            "Change": "-19.04",
+            "Change %": "-13.11%",
+            "Volume": "12.13M",
+            "Market Cap": "107.92B"
+        },
+        {
+            "Symbol": "GM",
+            "Name": "General Motors Company",
+            "Last Priise": "46.51",
+            "Market Time": "11:09AM EDT",
+            "Change": "-3.05",
+            "Change %": "-6.15%",
+            "Volume": "19.176M",
+            "Market Cap": "53.04B"
+        },
+        {
+            "Symbol": "KO",
+            "Name": "The Coca-Cola Company",
+            "Last Priise": "65.29",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.52",
+            "Change %": "+0.80%",
+            "Volume": "4.235M",
+            "Market Cap": "281.267B"
+        },
+        {
+            "Symbol": "LMT",
+            "Name": "Lockheed Martin Corporation",
+            "Last Priise": "487.09",
+            "Market Time": "11:09AM EDT",
+            "Change": "+12.50",
+            "Change %": "+2.63%",
+            "Volume": "767,464",
+            "Market Cap": "115.897B"
+        },
+        {
+            "Symbol": "DIS",
+            "Name": "The Walt Disney Company",
+            "Last Priise": "91.29",
+            "Market Time": "11:09AM EDT",
+            "Change": "-2.84",
+            "Change %": "-3.02%",
+            "Volume": "8.762M",
+            "Market Cap": "166.416B"
+        },
+        {
+            "Symbol": "GE",
+            "Name": "GE Aerospace",
+            "Last Priise": "176.20",
+            "Market Time": "11:09AM EDT",
+            "Change": "+13.44",
+            "Change %": "+8.26%",
+            "Volume": "7.767M",
+            "Market Cap": "192.87B"
+        },
+        {
+            "Symbol": "AZTR",
+            "Name": "Azitra, Inc.",
+            "Last Priise": "8.61",
+            "Market Time": "11:09AM EDT",
+            "Change": "+6.99",
+            "Change %": "+431.48%",
+            "Volume": "45.459M",
+            "Market Cap": "8.267M"
+        },
+        {
+            "Symbol": "DHR",
+            "Name": "Danaher Corporation",
+            "Last Priise": "267.72",
+            "Market Time": "11:09AM EDT",
+            "Change": "+16.83",
+            "Change %": "+6.71%",
+            "Volume": "3.482M",
+            "Market Cap": "198.297B"
+        },
+        {
+            "Symbol": "NXPI",
+            "Name": "NXP Semiconductors N.V.",
+            "Last Priise": "256.74",
+            "Market Time": "11:09AM EDT",
+            "Change": "-27.07",
+            "Change %": "-9.54%",
+            "Volume": "2.281M",
+            "Market Cap": "65.644B"
+        },
+        {
+            "Symbol": "PM",
+            "Name": "Philip Morris International Inc.",
+            "Last Priise": "109.14",
+            "Market Time": "11:09AM EDT",
+            "Change": "+1.92",
+            "Change %": "+1.79%",
+            "Volume": "3.361M",
+            "Market Cap": "169.665B"
+        },
+        {
+            "Symbol": "CMCSA",
+            "Name": "Comcast Corporation",
+            "Last Priise": "37.10",
+            "Market Time": "11:09AM EDT",
+            "Change": "-2.43",
+            "Change %": "-6.16%",
+            "Volume": "10.316M",
+            "Market Cap": "145.547B"
+        },
+        {
+            "Symbol": "ADIL",
+            "Name": "Adial Pharmaceuticals, Inc.",
+            "Last Priise": "1.6650",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.6050",
+            "Change %": "+57.24%",
+            "Volume": "138.793M",
+            "Market Cap": "7.048M"
+        },
+        {
+            "Symbol": "MSCI",
+            "Name": "MSCI Inc.",
+            "Last Priise": "553.54",
+            "Market Time": "11:09AM EDT",
+            "Change": "+47.52",
+            "Change %": "+9.39%",
+            "Volume": "527,443",
+            "Market Cap": "43.854B"
+        },
+        {
+            "Symbol": "FDX",
+            "Name": "FedEx Corporation",
+            "Last Priise": "302.83",
+            "Market Time": "11:08AM EDT",
+            "Change": "-4.60",
+            "Change %": "-1.50%",
+            "Volume": "750,585",
+            "Market Cap": "73.982B"
+        },
+        {
+            "Symbol": "FCX",
+            "Name": "Freeport-McMoRan Inc.",
+            "Last Priise": "44.92",
+            "Market Time": "11:09AM EDT",
+            "Change": "-1.09",
+            "Change %": "-2.37%",
+            "Volume": "7.922M",
+            "Market Cap": "64.527B"
+        },
+        {
+            "Symbol": "SOAR",
+            "Name": "Volato Group, Inc.",
+            "Last Priise": "0.6110",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.1331",
+            "Change %": "+27.45%",
+            "Volume": "43.411M",
+            "Market Cap": "17.877M"
+        },
+        {
+            "Symbol": "SHW",
+            "Name": "The Sherwin-Williams Company",
+            "Last Priise": "332.33",
+            "Market Time": "11:09AM EDT",
+            "Change": "+9.98",
+            "Change %": "+3.10%",
+            "Volume": "1.248M",
+            "Market Cap": "84.263B"
+        },
+        {
+            "Symbol": "MEDP",
+            "Name": "Medpace Holdings, Inc.",
+            "Last Priise": "363.49",
+            "Market Time": "11:09AM EDT",
+            "Change": "-73.69",
+            "Change %": "-16.86%",
+            "Volume": "411,307",
+            "Market Cap": "11.269B"
+        },
+        {
+            "Symbol": "JAGX",
+            "Name": "Jaguar Health, Inc.",
+            "Last Priise": "1.4992",
+            "Market Time": "11:09AM EDT",
+            "Change": "-2.7708",
+            "Change %": "-64.89%",
+            "Volume": "9.162M",
+            "Market Cap": "11.857M"
+        },
+        {
+            "Symbol": "ATPC",
+            "Name": "Agape ATP Corporation",
+            "Last Priise": "0.2227",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.0797",
+            "Change %": "+55.77%",
+            "Volume": "86.651M",
+            "Market Cap": "17.14M"
+        },
+        {
+            "Symbol": "CMAX",
+            "Name": "CareMax, Inc.",
+            "Last Priise": "3.1550",
+            "Market Time": "11:08AM EDT",
+            "Change": "-2.0350",
+            "Change %": "-39.02%",
+            "Volume": "6.728M",
+            "Market Cap": "11.998M"
+        },
+        {
+            "Symbol": "PII",
+            "Name": "Polaris Inc.",
+            "Last Priise": "76.10",
+            "Market Time": "11:08AM EDT",
+            "Change": "-6.04",
+            "Change %": "-7.35%",
+            "Volume": "1.439M",
+            "Market Cap": "4.301B"
+        },
+        {
+            "Symbol": "JMIA",
+            "Name": "Jumia Technologies AG",
+            "Last Priise": "13.34",
+            "Market Time": "11:09AM EDT",
+            "Change": "-1.22",
+            "Change %": "-8.38%",
+            "Volume": "4.877M",
+            "Market Cap": "1.364B"
+        },
+        {
+            "Symbol": "SAP",
+            "Name": "SAP SE",
+            "Last Priise": "211.94",
+            "Market Time": "11:08AM EDT",
+            "Change": "+11.47",
+            "Change %": "+5.72%",
+            "Volume": "898,920",
+            "Market Cap": "247.383B"
+        },
+        {
+            "Symbol": "WRNT",
+            "Name": "Warrantee Inc.",
+            "Last Priise": "0.3097",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.0042",
+            "Change %": "+1.37%",
+            "Volume": "64.743M",
+            "Market Cap": "6.939M"
+        },
+        {
+            "Symbol": "HCA",
+            "Name": "HCA Healthcare, Inc.",
+            "Last Priise": "338.58",
+            "Market Time": "11:09AM EDT",
+            "Change": "+13.20",
+            "Change %": "+4.06%",
+            "Volume": "1.187M",
+            "Market Cap": "88.678B"
+        },
+        {
+            "Symbol": "AMC",
+            "Name": "AMC Entertainment Holdings, Inc.",
+            "Last Priise": "5.11",
+            "Market Time": "11:09AM EDT",
+            "Change": "-0.18",
+            "Change %": "-3.31%",
+            "Volume": "8.747M",
+            "Market Cap": "1.845B"
+        },
+        {
+            "Symbol": "VALE",
+            "Name": "Vale S.A.",
+            "Last Priise": "10.78",
+            "Market Time": "11:09AM EDT",
+            "Change": "-0.14",
+            "Change %": "-1.28%",
+            "Volume": "8.718M",
+            "Market Cap": "46.46B"
+        },
+        {
+            "Symbol": "TUSK",
+            "Name": "Mammoth Energy Services, Inc.",
+            "Last Priise": "4.3501",
+            "Market Time": "11:09AM EDT",
+            "Change": "+0.8501",
+            "Change %": "+24.28%",
+            "Volume": "4.079M",
+            "Market Cap": "209.359M"
+        }
+    ]
+]

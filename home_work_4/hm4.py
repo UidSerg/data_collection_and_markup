@@ -36,6 +36,8 @@ import os
 import requests
 from lxml import html
 import pandas as pd
+
+
 url = "https://finance.yahoo.com/trending-tickers/"
 
 response = requests.get(url, headers={
@@ -68,5 +70,5 @@ else:
 data = df.to_dict(orient='records')
 data.append(list_date)
 with open('finance_data.json', 'w', encoding='utf-8') as file:
-    json.dump(data, file, ensure_ascii=False, indent=4)    
+    json.dump(data, file, ensure_ascii=False, indent=4) 
 print(list_date)
