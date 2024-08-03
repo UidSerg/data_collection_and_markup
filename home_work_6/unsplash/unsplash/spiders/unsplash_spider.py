@@ -27,13 +27,15 @@ class UnsplashSpiderSpider(scrapy.Spider):
         for image in response.xpath('//div[@class="JM3zT"]/a/div/img[2]'):
             image_url = image.xpath('@srcset').extract_first()
             urls = image_url.split('?')[0]
-            yield scrapy.Request(urls, self.save_image, meta={'page_name': page_name})
+            image_name = image.xpath('@alt').extract_first()
+            yield scrapy.Request(urls, self.save_image, meta={'page_name': page_name, 'image_name': image_name})
 
 
     def save_image(self, response):
         """функция сохранения"""
         page_name = response.meta['page_name']
-        filename = response.url.split('/')[-1]
+        filename = response.meta['image_name']
+        # filename = response.url.split('/')[-1]
         # проверим есть ли папка если папки нет создадим
         page_dir = f'images/{page_name}'
         if not os.path.exists(page_dir):
