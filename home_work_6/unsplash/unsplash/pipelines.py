@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class DnsShopPipeline:
+class UnsplashPipeline:
     def process_item(self, item, spider):
         return item

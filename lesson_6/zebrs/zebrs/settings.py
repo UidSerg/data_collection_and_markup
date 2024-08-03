@@ -1,4 +1,4 @@
-# Scrapy settings for dns_shop project
+# Scrapy settings for zebrs project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "dns_shop"
+BOT_NAME = "zebrs"
 
-SPIDER_MODULES = ["dns_shop.spiders"]
-NEWSPIDER_MODULE = "dns_shop.spiders"
+SPIDER_MODULES = ["zebrs.spiders"]
+NEWSPIDER_MODULE = "zebrs.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -46,13 +46,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "dns_shop.middlewares.DnsShopSpiderMiddleware": 543,
+#    "zebrs.middlewares.ZebrsSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "dns_shop.middlewares.DnsShopDownloaderMiddleware": 543,
+#    "zebrs.middlewares.ZebrsDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,9 +63,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "dns_shop.pipelines.DnsShopPipeline": 300,
-#}
+ITEM_PIPELINES = {'zebrs.pipelines.CustomImagesPipeline': 1}
+
+#ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -92,3 +93,6 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+IMAGES_STORE = '/img'
+FILES_STORE = '/file'
+FEED_EXPORT_FIELDS = ['title', 'price']
